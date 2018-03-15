@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Direct Message Picker View Controller-->
+        <scene sceneID="0yX-21-TZG">
+            <objects>
+                <viewController storyboardIdentifier="DirectMessagePickerViewController" id="Mcl-TI-SjW" customClass="DirectMessagePickerViewController" customModule="Twignature" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2m2-O1-aeV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qih-JD-4G5">
+                                <rect key="frame" x="320" y="20" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeDidClick:" destination="Mcl-TI-SjW" eventType="touchUpInside" id="AcK-rs-0va"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ASW-EF-lon">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="ABH-MV-BaI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ASW-EF-lon" firstAttribute="top" secondItem="Qih-JD-4G5" secondAttribute="bottom" constant="20" id="5hG-0l-kCs"/>
+                            <constraint firstItem="ewx-aO-lnP" firstAttribute="trailing" secondItem="ASW-EF-lon" secondAttribute="trailing" id="GBV-86-JqK"/>
+                            <constraint firstItem="ewx-aO-lnP" firstAttribute="top" secondItem="Qih-JD-4G5" secondAttribute="top" id="Qjn-4f-nxs"/>
+                            <constraint firstItem="ewx-aO-lnP" firstAttribute="bottom" secondItem="ASW-EF-lon" secondAttribute="bottom" id="Tu4-QF-kDI"/>
+                            <constraint firstItem="ewx-aO-lnP" firstAttribute="trailing" secondItem="Qih-JD-4G5" secondAttribute="trailing" constant="16" id="f9s-Ra-pkG"/>
+                            <constraint firstItem="ASW-EF-lon" firstAttribute="leading" secondItem="ewx-aO-lnP" secondAttribute="leading" id="qzK-qf-vph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ewx-aO-lnP"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="ABH-MV-BaI" id="CJa-fb-Ose"/>
+                        <outlet property="tableView" destination="ASW-EF-lon" id="4fc-ZG-jQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3m0-JE-wEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="278"/>
+        </scene>
+    </scenes>
+</document>

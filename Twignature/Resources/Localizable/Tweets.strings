@@ -1,0 +1,29 @@
+/* 
+  Tweets.strings
+  Twignature
+
+  Created by Ivan Hahanov on 9/26/17.
+  Copyright © 2017 Applikey. All rights reserved.
+*/
+
+"verify.alert" = "Verify yourself";
+"authentication.reason" = "We need your authentication to verify your account";
+"tweetRetweetedSuccessfully" = "Message retweeted successfully";
+"tweetPlaceholder" = "YOUR TWEET HERE…";
+"tweetPostAsVerifiedUser" = "Authenticate";
+"tweetPostAsNonVeridiedUser" = "No Thanks";
+"cancel" = "Cancel";
+"tweetCreating" = "Creating of tweet";
+"tweetSuccessfullyCreated" = "Tweet successfully created";
+"noTweets" = "No Tweets here yet";
+"noRetweets" = "No Retweets here yet";
+"noTwignatureTweets" = "No Signrs here yet";
+"noMentions" = "No Mentions here yet";
+"noLikes" = "No liked tweets yet";
+"retweet" = "Retweet";
+"quote" = "Quote";
+
+//Search Filter
+"people" = "People";
+"tweets" = "Tweets";
+

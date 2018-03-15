@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf-ui-text-regular-58646b56a688c.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PossiblySensitiveTweetSubView" customModule="Twignature" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zp9-Ix-dCy">
+                    <rect key="frame" x="0.0" y="5" width="409" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Tweet is not available because it includes potentially sensitive content." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnz-DP-Nko">
+                            <rect key="frame" x="10" y="30" width="389" height="80"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90060967209999998" green="0.92531943319999999" blue="0.94196039440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Lnz-DP-Nko" secondAttribute="bottom" constant="30" id="3Q1-RI-YWN"/>
+                        <constraint firstItem="Lnz-DP-Nko" firstAttribute="top" secondItem="Zp9-Ix-dCy" secondAttribute="top" constant="30" id="4ye-wu-UCf"/>
+                        <constraint firstItem="Lnz-DP-Nko" firstAttribute="leading" secondItem="Zp9-Ix-dCy" secondAttribute="leading" constant="10" id="9GM-hH-DO0"/>
+                        <constraint firstAttribute="trailing" secondItem="Lnz-DP-Nko" secondAttribute="trailing" constant="10" id="lBa-ji-Snp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.79920762779999999" green="0.83844512699999996" blue="0.86601316930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zp9-Ix-dCy" secondAttribute="bottom" constant="5" id="4gO-NZ-a8b"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zp9-Ix-dCy" secondAttribute="trailing" id="62J-0e-ntK"/>
+                <constraint firstItem="Zp9-Ix-dCy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="VbR-Sx-yeJ"/>
+                <constraint firstItem="Zp9-Ix-dCy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nql-YA-6Bq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="22.5" y="-175"/>
+        </view>
+    </objects>
+</document>

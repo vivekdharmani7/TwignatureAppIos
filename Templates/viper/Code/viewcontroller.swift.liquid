@@ -1,0 +1,38 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class {{ module_info.name }}ViewController: BaseViewController {
+	
+	//MARK: - Properties
+  	var eventHandler: {{ module_info.name }}EventHandling!
+  
+  	//MARK: - Life cycle
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+        configureInterface()
+	}
+
+	//MARK: - Private -
+
+	//MARK: - UI
+    
+    private func configureInterface() {
+        localizeViews()
+    }
+    
+    private func localizeViews() {
+    }
+
+}
+
+extension {{ module_info.name }}ViewController: {{ module_info.name }}Viewing {
+}

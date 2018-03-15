@@ -1,0 +1,27 @@
+### Headers settings
+company: AppliKey Solutions
+
+### Xcode project settings
+project_name: Twignature
+product_module_name: Twignature
+xcodeproj_path: Twignature.xcodeproj
+
+
+### Code generation settings section
+# The main project target name
+project_target: Twignature
+
+# The file path for new modules
+project_file_path: Twignature/Modules
+
+# The Xcode group path to new modules
+project_group_path: Twignature/Modules
+
+### Dependencies settings section
+podfile_path: Podfile
+
+
+### Templates
+templates:
+#- {name: local_template_name, local: 'absolute/file/path'}
+- {name: template, local: '../Templates'}

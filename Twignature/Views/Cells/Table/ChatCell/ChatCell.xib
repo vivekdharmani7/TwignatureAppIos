@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="sf-ui-text-regular-58646b56a688c.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatCell" id="KGk-i7-Jjw" customClass="ChatCell" customModule="Twignature" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISG-Pu-SOk" userLabel="View - [container]">
+                        <rect key="frame" x="20" y="0.0" width="280" height="109.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-DV-2XX" userLabel="View - [names]">
+                                <rect key="frame" x="75" y="23" width="185" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxy-db-k83">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiD-0j-uT9">
+                                        <rect key="frame" x="45.5" y="0.0" width="139.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                        <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YiD-0j-uT9" secondAttribute="trailing" id="4VA-ga-044"/>
+                                    <constraint firstAttribute="bottom" secondItem="YiD-0j-uT9" secondAttribute="bottom" id="PUW-Lm-Umr"/>
+                                    <constraint firstItem="Cxy-db-k83" firstAttribute="leading" secondItem="ymf-DV-2XX" secondAttribute="leading" id="RfD-pF-Xip"/>
+                                    <constraint firstItem="YiD-0j-uT9" firstAttribute="top" secondItem="ymf-DV-2XX" secondAttribute="top" id="SL9-as-Kvh"/>
+                                    <constraint firstAttribute="height" constant="20" id="V5N-fg-MGq"/>
+                                    <constraint firstItem="Cxy-db-k83" firstAttribute="top" secondItem="ymf-DV-2XX" secondAttribute="top" id="b3s-eU-GU4"/>
+                                    <constraint firstItem="YiD-0j-uT9" firstAttribute="leading" secondItem="Cxy-db-k83" secondAttribute="trailing" constant="5" id="et2-y2-JAZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cxy-db-k83" secondAttribute="bottom" id="ixk-M3-oZC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh5-XS-XEL" customClass="AvatarContainerView" customModule="Twignature" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="35" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="8Xy-j3-vih"/>
+                                    <constraint firstAttribute="height" constant="35" id="bdq-zW-deG"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoS-1c-ciq">
+                                <rect key="frame" x="75" y="51" width="185" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeH-iL-zHf">
+                                <rect key="frame" x="75" y="73" width="36" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qoS-1c-ciq" firstAttribute="trailing" secondItem="ymf-DV-2XX" secondAttribute="trailing" id="2QV-6T-JdH"/>
+                            <constraint firstItem="qoS-1c-ciq" firstAttribute="leading" secondItem="ymf-DV-2XX" secondAttribute="leading" id="4LM-vx-hu9"/>
+                            <constraint firstItem="FeH-iL-zHf" firstAttribute="top" secondItem="qoS-1c-ciq" secondAttribute="bottom" constant="5" id="70R-aL-i6d"/>
+                            <constraint firstItem="ymf-DV-2XX" firstAttribute="top" secondItem="ISG-Pu-SOk" secondAttribute="top" constant="23" id="9lN-4G-7Nl"/>
+                            <constraint firstAttribute="trailing" secondItem="ymf-DV-2XX" secondAttribute="trailing" constant="20" id="Ffx-6D-WyF"/>
+                            <constraint firstItem="ymf-DV-2XX" firstAttribute="leading" secondItem="gh5-XS-XEL" secondAttribute="trailing" constant="20" id="Ft0-bO-IyY"/>
+                            <constraint firstItem="FeH-iL-zHf" firstAttribute="leading" secondItem="qoS-1c-ciq" secondAttribute="leading" id="JsM-eP-0eo"/>
+                            <constraint firstItem="qoS-1c-ciq" firstAttribute="top" secondItem="ymf-DV-2XX" secondAttribute="bottom" constant="8" id="cLW-36-iRp"/>
+                            <constraint firstItem="gh5-XS-XEL" firstAttribute="leading" secondItem="ISG-Pu-SOk" secondAttribute="leading" constant="20" id="nLO-zZ-GZe"/>
+                            <constraint firstItem="gh5-XS-XEL" firstAttribute="top" secondItem="ISG-Pu-SOk" secondAttribute="top" constant="20" id="yl9-9y-cy0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="yOffset">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.059999999999999998"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="ISG-Pu-SOk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HFr-aB-7PV"/>
+                    <constraint firstAttribute="bottom" secondItem="ISG-Pu-SOk" secondAttribute="bottom" constant="15" id="UJA-qX-0OU"/>
+                    <constraint firstAttribute="trailing" secondItem="ISG-Pu-SOk" secondAttribute="trailing" constant="20" id="bPd-wc-4Jg"/>
+                    <constraint firstItem="ISG-Pu-SOk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jR2-of-uTS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="avatarView" destination="gh5-XS-XEL" id="uDZ-Sa-OLe"/>
+                <outlet property="lastMessageTextLabel" destination="qoS-1c-ciq" id="uJT-M2-x4r"/>
+                <outlet property="nameLabel" destination="Cxy-db-k83" id="sBb-YD-DXQ"/>
+                <outlet property="timeAgoLabel" destination="FeH-iL-zHf" id="4rT-BW-tBE"/>
+                <outlet property="usernameLabel" destination="YiD-0j-uT9" id="94p-2g-pif"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tweet Details View Controller-->
+        <scene sceneID="1aU-XF-YTf">
+            <objects>
+                <viewController storyboardIdentifier="TweetDetailsViewController" id="81s-7o-ifw" customClass="TweetDetailsViewController" customModule="Twignature" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVO-MN-tLd"/>
+                        <viewControllerLayoutGuide type="bottom" id="d7f-1l-835"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VrK-7p-7pC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wt2-LZ-10d">
+                                <rect key="frame" x="0.0" y="20" width="375" height="582"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaK-yK-c5V">
+                                <rect key="frame" x="20" y="612" width="335" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="d3N-Sj-y5u"/>
+                                </constraints>
+                                <state key="normal" title="Add reply tweet…">
+                                    <color key="titleColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addReplyDidTap:" destination="81s-7o-ifw" eventType="touchUpInside" id="DfV-l1-2cq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yaK-yK-c5V" firstAttribute="leading" secondItem="VrK-7p-7pC" secondAttribute="leading" constant="20" id="6ZG-zY-11w"/>
+                            <constraint firstAttribute="trailing" secondItem="wt2-LZ-10d" secondAttribute="trailing" id="YYj-7z-QcO"/>
+                            <constraint firstAttribute="trailing" secondItem="yaK-yK-c5V" secondAttribute="trailing" constant="20" id="da3-h5-Sht"/>
+                            <constraint firstItem="d7f-1l-835" firstAttribute="top" secondItem="yaK-yK-c5V" secondAttribute="bottom" constant="20" id="iR6-ax-Eiy"/>
+                            <constraint firstItem="wt2-LZ-10d" firstAttribute="top" secondItem="KVO-MN-tLd" secondAttribute="bottom" id="m4t-r4-CAm"/>
+                            <constraint firstItem="yaK-yK-c5V" firstAttribute="top" secondItem="wt2-LZ-10d" secondAttribute="bottom" constant="10" id="omx-c7-0z0"/>
+                            <constraint firstItem="wt2-LZ-10d" firstAttribute="leading" secondItem="VrK-7p-7pC" secondAttribute="leading" id="pQb-RE-doN"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="tableView" destination="wt2-LZ-10d" id="G2C-Qq-p6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwJ-x7-n7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="224"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,24 @@
+/* 
+  OnBoarding.strings
+  Twignature
+
+  Created by mac on 18.09.17.
+  Copyright © 2017 Applikey. All rights reserved.
+*/
+
+"firstOnBoardingTextValid" = "Your original signatures on Twitter have market value to your brands and sponsors. We power those original and authenticated signatures.";
+
+"secondOnBoardingTextValid" = "We help you monetize your signature and drawing value over time with official Seals of Authenticity for sponsorships or charitable causes.";
+
+"thirdOnBoardingTextValid" = "Simply be yourself. Draw, doodle or autograph your tweets as a new class of digital memorabilia, and let us team with you and your brands of interest.";
+
+"fourthOnBoardingTextValid" = "Our patented signature technology brings new interest and value to your original marks on Twitter, as we raise your profile in augmented autographs for causes and capital of a new kind";
+
+// Non valid on boarding messages
+"firstOnBoardingTextNonValid" = "You can now personalize your style with original marks on Twitter. Be Authentic!";
+
+"secondOnBoardingTextNonValid" = "Just sign in with your Twitter handle and sign, draw and doodle. Be Original!";
+
+"thirdOnBoardingTextNonValid" = "Draw original art for brands and causes you care about, as pictures can say a million words, especially hand drawn ones. Be Creative!";
+
+"fourthOnBoardingTextNonValid" = "Get discovered by brands and Signrs talent reps who are always looking for new art forms in digital memorabilia. Make your mark!";

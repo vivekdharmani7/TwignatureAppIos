@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatInputView" customModule="Twignature" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="348"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MVH-1J-gWr">
+                    <rect key="frame" x="5" y="0.0" width="480" height="348"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLA-RZ-hPI">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="151"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ln6-Zm-72d">
+                                    <rect key="frame" x="15" y="10" width="170" height="40"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="170" id="fGg-wm-6Te"/>
+                                        <constraint firstAttribute="height" constant="40" id="xc1-8F-JIs"/>
+                                    </constraints>
+                                    <state key="normal" title="Remove attachment">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="removeAttachmentDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="a72-lX-GxX"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="36W-QU-tB6">
+                                    <rect key="frame" x="15" y="60" width="450" height="91"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="36W-QU-tB6" secondAttribute="trailing" constant="15" id="A8F-Or-zKu"/>
+                                <constraint firstAttribute="height" constant="150.5" id="GlO-OM-gwU"/>
+                                <constraint firstItem="36W-QU-tB6" firstAttribute="top" secondItem="ln6-Zm-72d" secondAttribute="bottom" constant="10" id="L4K-KA-bBK"/>
+                                <constraint firstItem="ln6-Zm-72d" firstAttribute="leading" secondItem="GLA-RZ-hPI" secondAttribute="leading" constant="15" id="MV0-uL-dLp"/>
+                                <constraint firstItem="36W-QU-tB6" firstAttribute="leading" secondItem="GLA-RZ-hPI" secondAttribute="leading" constant="15" id="PqO-XV-Cf6"/>
+                                <constraint firstAttribute="bottom" secondItem="36W-QU-tB6" secondAttribute="bottom" id="lna-vX-fgz"/>
+                                <constraint firstItem="ln6-Zm-72d" firstAttribute="top" secondItem="GLA-RZ-hPI" secondAttribute="top" constant="10" id="xkL-de-c43"/>
+                                <constraint firstItem="36W-QU-tB6" firstAttribute="centerX" secondItem="GLA-RZ-hPI" secondAttribute="centerX" id="z7V-hZ-Dii"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8rT-h9-Q78">
+                            <rect key="frame" x="0.0" y="156" width="480" height="192"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IV-Zv-lEr">
+                                    <rect key="frame" x="0.0" y="71" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="gO8-lL-cQO"/>
+                                        <constraint firstAttribute="width" constant="50" id="oOX-0i-Syg"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_take_photo"/>
+                                    <connections>
+                                        <action selector="photoDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZT0-iM-jj4"/>
+                                    </connections>
+                                </button>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAS-Jz-10H">
+                                    <rect key="frame" x="50" y="71" width="380" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="18"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.78431372549019607" green="0.78431372549019607" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzC-BI-eX2">
+                                    <rect key="frame" x="430" y="81" width="50" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="W1s-IH-OWe"/>
+                                    </constraints>
+                                    <state key="normal" title="Send"/>
+                                    <state key="disabled">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sendButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="H8Y-Ko-SIV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MVH-1J-gWr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="4hH-K5-KSw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MVH-1J-gWr" secondAttribute="trailing" constant="5" id="Ny5-vx-iTk"/>
+                <constraint firstItem="MVH-1J-gWr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="iHj-Nr-kP6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MVH-1J-gWr" secondAttribute="bottom" id="smy-na-QPi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="attachmentsContainer" destination="GLA-RZ-hPI" id="oqn-GH-lbz"/>
+                <outlet property="imageView" destination="36W-QU-tB6" id="l1z-Af-5pK"/>
+                <outlet property="inputContainer" destination="EAS-Jz-10H" id="a5v-j4-0PE"/>
+                <outlet property="photoButton" destination="8IV-Zv-lEr" id="LSF-lu-mBU"/>
+                <outlet property="sendButton" destination="HzC-BI-eX2" id="L05-Ki-rfD"/>
+            </connections>
+            <point key="canvasLocation" x="-110" y="-592"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_take_photo" width="28" height="22"/>
+    </resources>
+</document>

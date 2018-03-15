@@ -1,0 +1,18 @@
+/* 
+  TwignatureError.strings
+  Twignature
+
+  Created by mac on 13.09.17.
+  Copyright © 2017 Applikey. All rights reserved.
+*/
+
+"twitterAccountNotFound"	= "Twitter account not found";
+"unauthorized"				= "Unauthorized";
+"accessDenied"				= "Access to this feature denied";
+"maximumCharactersLimit"	= "Tweet is too long";
+"signatureNotAttached"		= "Seal should be signed with a signature";
+"messageWasNotDelivered"	= "Message was not delivered. Probably you are not allowed to send direct messages to the recipient";
+"unexpectedResult" = "unexpected result";
+"notFollowedByYouWarning" = "This user is not followed by you. Likely your  messages will not be delivered. Do you agree to open chat anyway?";
+"no.internet" = "No Internet Connection. Please check and try again";
+"allFieldsAreMandory" = "Please fill all the mandatory fields";

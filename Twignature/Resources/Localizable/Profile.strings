@@ -1,0 +1,24 @@
+/* 
+  Profile.strings
+  Twignature
+
+  Created by Ivan Hahanov on 9/11/17.
+  Copyright © 2017 Applikey. All rights reserved.
+*/
+
+"following" = "Following";
+"followers" = "Followers";
+"blocks" = "Blocks";
+"mutes" = "Mutes";
+"mentions" = "Mentions";
+"likes" = "Likes";
+"tweets" = "Tweets";
+"media" = "Media";
+"viewAll" = "VIEW ALL";
+"unfollow" = "Unfollow";
+"unfollowWarning" = "Are you sure you want to unfollow";
+"noMuted" = "No muted users yet";
+"noBlocked" = "No blocked users yet";
+"noFollowing" = "No following users here yet";
+"noFollowers" = "No Followers here yet";
+"verificationRequestSendedSuccessfully" = "Verification request has been successfully sent";

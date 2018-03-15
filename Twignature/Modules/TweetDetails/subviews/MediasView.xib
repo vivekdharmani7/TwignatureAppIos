@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MediasView" customModule="Twignature" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2uW-DL-E8Q">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="152"/>
+                    <subviews>
+                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NAt-AJ-VDe">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="71"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G47-1T-CSE" customClass="MediaItemView" customModule="Twignature" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="71"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGx-5Q-D77" customClass="MediaItemView" customModule="Twignature" customModuleProvider="target">
+                                    <rect key="frame" x="95" y="0.0" width="90" height="71"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wue-7L-jVD" customClass="MediaItemView" customModule="Twignature" customModuleProvider="target">
+                                    <rect key="frame" x="190" y="0.0" width="90" height="71"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Myf-gh-fT3" customClass="MediaItemView" customModule="Twignature" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="81" width="280" height="71"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2uW-DL-E8Q" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="HhD-bh-X8E"/>
+                <constraint firstItem="2uW-DL-E8Q" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="OSe-Wl-yz3"/>
+                <constraint firstItem="2uW-DL-E8Q" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Owb-LU-FYI"/>
+                <constraint firstItem="2uW-DL-E8Q" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="v2y-Hq-Y0I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="primaryMediaItemView" destination="Myf-gh-fT3" id="Dir-tP-0L2"/>
+                <outlet property="secondaryItemsStack" destination="NAt-AJ-VDe" id="jt0-Iu-d47"/>
+                <outletCollection property="secondaryItemsCollection" destination="G47-1T-CSE" collectionClass="NSMutableArray" id="J85-Ql-1yO"/>
+                <outletCollection property="secondaryItemsCollection" destination="nGx-5Q-D77" collectionClass="NSMutableArray" id="fkn-Wc-RSk"/>
+                <outletCollection property="secondaryItemsCollection" destination="wue-7L-jVD" collectionClass="NSMutableArray" id="6Su-1g-rgq"/>
+            </connections>
+            <point key="canvasLocation" x="-326" y="-230"/>
+        </view>
+    </objects>
+</document>

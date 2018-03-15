@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MediaItemView" customModule="Twignature" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="iEb-yC-JTQ" id="Jqp-xA-YBn"/>
+                <outlet property="playIconView" destination="6IE-06-rX5" id="dQn-G9-tMZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="370"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iEb-yC-JTQ">
+                    <rect key="frame" x="0.0" y="0.0" width="424" height="370"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6IE-06-rX5">
+                    <rect key="frame" x="186" y="159" width="52" height="52"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_play" translatesAutoresizingMaskIntoConstraints="NO" id="xRE-fw-YSs">
+                            <rect key="frame" x="1" y="1" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xRE-fw-YSs" firstAttribute="centerX" secondItem="6IE-06-rX5" secondAttribute="centerX" id="1bE-Ys-4CN"/>
+                        <constraint firstAttribute="height" constant="52" id="5Fa-g6-YNy"/>
+                        <constraint firstAttribute="width" secondItem="xRE-fw-YSs" secondAttribute="width" constant="2" id="BFz-7N-BeH"/>
+                        <constraint firstAttribute="width" constant="52" id="jDa-KO-O2S"/>
+                        <constraint firstItem="xRE-fw-YSs" firstAttribute="centerY" secondItem="6IE-06-rX5" secondAttribute="centerY" id="ljm-b1-E6z"/>
+                        <constraint firstAttribute="height" secondItem="xRE-fw-YSs" secondAttribute="height" constant="2" id="rEF-T4-4TL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="26"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iEb-yC-JTQ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="1US-lZ-9hC"/>
+                <constraint firstItem="6IE-06-rX5" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="2B8-1U-gkH"/>
+                <constraint firstItem="iEb-yC-JTQ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Hmx-Fx-rbd"/>
+                <constraint firstItem="iEb-yC-JTQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Zxk-km-Zqr"/>
+                <constraint firstItem="iEb-yC-JTQ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="aG0-tO-pTE"/>
+                <constraint firstItem="6IE-06-rX5" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="w2u-us-tAd"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34" y="6"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_play" width="50" height="50"/>
+    </resources>
+</document>

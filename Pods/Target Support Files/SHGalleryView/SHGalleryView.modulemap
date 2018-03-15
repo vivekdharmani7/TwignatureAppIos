@@ -1,0 +1,6 @@
+framework module SHGalleryView {
+  umbrella header "SHGalleryView-umbrella.h"
+
+  export *
+  module * { export * }
+}

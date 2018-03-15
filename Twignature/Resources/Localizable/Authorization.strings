@@ -1,0 +1,12 @@
+/* 
+  Authorization.strings
+  Twignature
+
+  Created by Ivan Hahanov on 9/1/17.
+  Copyright © 2017 Applikey. All rights reserved.
+*/
+
+"login.twitter" = "LOGIN VIA TWITTER ACCOUNT";
+"app.description" = "Stylize your tweets with original\ndrawings and signatures.\n\nVerified accounts can certify\nautographed Tweets";
+"Terms and Conditions" = "Terms and Conditions";
+"I agree to the" = "I agree to the";

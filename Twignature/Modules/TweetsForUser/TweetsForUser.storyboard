@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tweets For User View Controller-->
+        <scene sceneID="AFz-WN-gEr">
+            <objects>
+                <viewController storyboardIdentifier="TweetsForUserViewController" id="xEc-ud-PeS" customClass="TweetsForUserViewController" customModule="Twignature" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wfq-Fo-pOc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-Hc-C3s">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUJ-2e-Mdp">
+                                <rect key="frame" x="-0.5" y="343.5" width="375" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bUJ-2e-Mdp" firstAttribute="centerX" secondItem="dDh-bj-6pI" secondAttribute="centerX" id="1gP-uk-qYv"/>
+                            <constraint firstItem="gcD-Hc-C3s" firstAttribute="height" secondItem="Wfq-Fo-pOc" secondAttribute="height" id="5ls-Ck-Dal"/>
+                            <constraint firstItem="gcD-Hc-C3s" firstAttribute="centerX" secondItem="dDh-bj-6pI" secondAttribute="centerX" id="6mh-1l-1cA"/>
+                            <constraint firstItem="bUJ-2e-Mdp" firstAttribute="centerY" secondItem="dDh-bj-6pI" secondAttribute="centerY" id="EFG-5w-OmL"/>
+                            <constraint firstItem="gcD-Hc-C3s" firstAttribute="width" secondItem="Wfq-Fo-pOc" secondAttribute="width" id="SFw-7f-qCx"/>
+                            <constraint firstItem="gcD-Hc-C3s" firstAttribute="centerY" secondItem="dDh-bj-6pI" secondAttribute="centerY" id="aKb-cI-WaH"/>
+                            <constraint firstItem="bUJ-2e-Mdp" firstAttribute="width" secondItem="Wfq-Fo-pOc" secondAttribute="width" id="lF9-Nh-Ko4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dDh-bj-6pI"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="nodataLabel" destination="bUJ-2e-Mdp" id="z7U-Lt-vHj"/>
+                        <outlet property="tableView" destination="gcD-Hc-C3s" id="03x-uX-bch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCa-FH-uQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="250"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,25 @@
+# Template information section
+name: "Template"
+summary: "Swift VIPER module"
+author: "Vladimir Kravchenko"
+version: "2.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+# Protocols
+- {name: Protocols.swift, path: Code/protocols.swift.liquid}
+
+# View
+- {name: ViewController.swift, path: Code/viewcontroller.swift.liquid}
+
+# Presenter
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+
+# Interactor
+- {name: Interactor.swift, path: Code/interactor.swift.liquid}
+
+# Wireframe
+- {name: Wireframe.swift, path: Code/wireframe.swift.liquid}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediaItemCell" id="gTV-IL-0wX" customClass="MediaItemCell" customModule="Twignature" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="198" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="198" height="137"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RxT-mZ-Cck">
+                        <rect key="frame" x="0.0" y="0.0" width="198" height="137"/>
+                    </imageView>
+                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob4-IN-vTR">
+                        <rect key="frame" x="73" y="42.5" width="52" height="52"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_play" translatesAutoresizingMaskIntoConstraints="NO" id="GvK-BT-pyy">
+                                <rect key="frame" x="1" y="1" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="GvK-BT-pyy" secondAttribute="width" constant="2" id="1M2-Bw-L5B"/>
+                            <constraint firstAttribute="height" secondItem="GvK-BT-pyy" secondAttribute="height" constant="2" id="Ibd-xi-vCQ"/>
+                            <constraint firstItem="GvK-BT-pyy" firstAttribute="centerX" secondItem="Ob4-IN-vTR" secondAttribute="centerX" id="OuW-rt-Gao"/>
+                            <constraint firstAttribute="height" constant="52" id="ZoM-1V-ZqA"/>
+                            <constraint firstItem="GvK-BT-pyy" firstAttribute="centerY" secondItem="Ob4-IN-vTR" secondAttribute="centerY" id="ck7-K8-ecv"/>
+                            <constraint firstAttribute="width" constant="52" id="xRT-ig-mwb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="26"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RxT-mZ-Cck" secondAttribute="trailing" id="LNB-4e-R4s"/>
+                <constraint firstItem="RxT-mZ-Cck" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ML0-Ll-QC0"/>
+                <constraint firstItem="Ob4-IN-vTR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="llD-9X-Nvo"/>
+                <constraint firstItem="RxT-mZ-Cck" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="maQ-Tl-iwc"/>
+                <constraint firstItem="Ob4-IN-vTR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ms2-ms-xqS"/>
+                <constraint firstAttribute="bottom" secondItem="RxT-mZ-Cck" secondAttribute="bottom" id="ydy-Ki-gqy"/>
+            </constraints>
+            <size key="customSize" width="198" height="137"/>
+            <connections>
+                <outlet property="imageView" destination="RxT-mZ-Cck" id="dEz-Ps-5vA"/>
+                <outlet property="playIconView" destination="Ob4-IN-vTR" id="52u-9E-Q0J"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="95.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_play" width="50" height="50"/>
+    </resources>
+</document>

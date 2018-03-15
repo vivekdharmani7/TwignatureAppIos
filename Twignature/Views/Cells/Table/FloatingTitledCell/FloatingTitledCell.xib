@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FloatingTitledCell" rowHeight="115" id="KGk-i7-Jjw" customClass="FloatingTitledCell" customModule="Twignature" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5Z-39-1AL">
+                        <rect key="frame" x="20" y="8" width="280" height="99"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hO-ka-8JW">
+                                <rect key="frame" x="20" y="40" width="172" height="20"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="12415" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvu-CU-Ugw">
+                                <rect key="frame" x="200" y="37.5" width="60" height="25"/>
+                                <color key="backgroundColor" red="0.27017781140000002" green="0.76566660399999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="0hM-zM-YsK"/>
+                                    <constraint firstAttribute="width" constant="60" id="DjC-gM-yXU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9hO-ka-8JW" firstAttribute="leading" secondItem="N5Z-39-1AL" secondAttribute="leading" constant="20" id="6sY-cy-KtN"/>
+                            <constraint firstAttribute="trailing" secondItem="rvu-CU-Ugw" secondAttribute="trailing" constant="20" id="UqZ-DZ-ewP"/>
+                            <constraint firstItem="rvu-CU-Ugw" firstAttribute="centerY" secondItem="N5Z-39-1AL" secondAttribute="centerY" id="Wif-3c-qVH"/>
+                            <constraint firstItem="9hO-ka-8JW" firstAttribute="centerY" secondItem="N5Z-39-1AL" secondAttribute="centerY" id="ehr-BH-LYR"/>
+                            <constraint firstItem="rvu-CU-Ugw" firstAttribute="leading" secondItem="9hO-ka-8JW" secondAttribute="trailing" constant="8" id="tlv-Ls-cw0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="N5Z-39-1AL" secondAttribute="trailing" constant="20" id="Ral-Qy-dgD"/>
+                    <constraint firstAttribute="bottom" secondItem="N5Z-39-1AL" secondAttribute="bottom" constant="8" id="S9L-ZM-cOJ"/>
+                    <constraint firstItem="N5Z-39-1AL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="U5S-L2-mNT"/>
+                    <constraint firstItem="N5Z-39-1AL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ywV-Sh-ETr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="container" destination="N5Z-39-1AL" id="1BK-a8-x3s"/>
+                <outlet property="countLabel" destination="rvu-CU-Ugw" id="P93-Fa-SgE"/>
+                <outlet property="titleLabel" destination="9hO-ka-8JW" id="0dP-Af-3c0"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="87.5"/>
+        </tableViewCell>
+    </objects>
+</document>
